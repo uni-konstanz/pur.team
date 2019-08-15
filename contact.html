@@ -1,0 +1,88 @@
+---
+layout: default
+title: Kontakt
+---
+
+<section class="content-section bg-light">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Projektverantwortliche</h3>
+            <h2 class="mb-5">Ihre Haupt&shy;ansprech&shy;partner</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p>Sollten Sie Fragen rund um das Projekt "Pflegeunterstützende
+                Robotik" haben, dürfen Sie gerne direkt die
+                Projektverantwortlichen kontaktieren, oder Sie schreiben eine
+                E-Mail an <a href="mailto:lio@pur.team">lio@pur.team</a> damit Sie
+                direkt an die für ihr Anliegen korrekte Person weitergeleitet
+                werden können.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section bg-gray">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Projektpartner</h3>
+            <h2 class="mb-5">Welche Institutionen sind beteiligt?</h2>
+        </div>
+        {% for org_hash in site.data.organisations %}
+        {% assign org_key = org_hash[0] %}
+        {% assign organisation = site.data.organisations[org_key] %}
+        <div class="row mb-5 mb-sm-2">
+            <div class="offset-md-2 col-md-4 col-xs-12">
+                <img class="img-fluid" src="/assets/img/organisations/{{org_key}}.jpg"
+                    alt="Profilbild von {{organisation.name}}">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <p class="text-muted d-none d-sm-block"><i class="fa fa-map-marker"></i> {{ organisation.country }}</p>
+
+                <h3><a href="{{ organisation.url }}">{{ organisation.name }}</a></h3>
+
+                <p>{{organisation.description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="content-section bg-light">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Team</h3>
+            <h2 class="mb-5">Unser Team</h2>
+        </div>
+        <div class="row">
+            {% assign organisations = site.data.organisations %}
+            {% for member_hash in site.data.members %}
+            {% assign member_key = member_hash[0] %}
+            {% assign member = site.data.members[member_key] %}
+            {% assign organisation = organisations[member.organisation] %}
+            <div class="col-md-4 col-lg-3">
+                <div class="member" id="{{member_key}}">
+                    <img src="/assets/img/avatar/{{member_key}}.jpg" class="member__avatar" width="110" height="110"
+                        alt="Foto von {{member.name}}" />
+
+                    <h4 class="member__name">{{member.name}}</h4>
+                    <p class="text-muted">{{member.role}}</p>
+
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item"><a href="mailto:{{member.email}}"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i></a></li>
+                        {% if organisation %}
+                        <li class="list-inline-item"><a href="{{organisation.url}}" title="{{organisation.name}}"><i
+                                    class="fa fa-home" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                        {% if member.tel %}
+                        <li class="list-inline-item"><a href="tel:{{organisation.tel}}"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

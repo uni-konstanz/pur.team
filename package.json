@@ -1,0 +1,27 @@
+{
+  "title": "PUR website",
+  "name": "pur-website",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "scripts": {
+    "build": "gulp default"
+  },
+  "license": "MIT",
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "4.7.0",
+    "jquery": "^3.4.1",
+    "jquery.easing": "^1.4.1",
+    "simple-line-icons": "^2.4.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0"
+  }
+}

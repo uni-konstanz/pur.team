@@ -1,0 +1,29 @@
+paginate: 5
+paginate_path: "/diary/page:num/"
+permalink: /diary/:year/:month/:day/:title.html
+
+title: PUR
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - octopress-autoprefixer
+
+markdown: redcarpet
+
+exclude:
+  - node_modules/
+  - gulpfile.js
+  - package.json
+  - README.md
+  - yarn-error.log
+  - yarn.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      is_post: true

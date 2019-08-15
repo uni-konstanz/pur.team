@@ -1,0 +1,74 @@
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-masthead.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+  background-color: #f9c31a;
+  background-image: url('../img/header-bg.svg');
+
+  &.small {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media(min-width:768px) {
+    padding-bottom: 8rem;
+  }
+
+  @media (min-width: 992px) {
+    height: 100vh;
+
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+}
+
+.header__sponsors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 8rem;
+
+  @media(min-width:768px) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-wrap: nowrap;
+
+    a {
+      max-width: auto;
+    }
+  }
+
+  img {
+    translate: transform 0.5s;
+  }
+
+  a {
+    padding: 1rem;
+    max-width: 12rem;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

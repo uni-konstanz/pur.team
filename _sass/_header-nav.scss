@@ -1,0 +1,36 @@
+.header-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+    li {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    a {
+        padding: 0.5rem 1.5rem;
+        border-radius: .25rem;
+        color: white;
+        font-weight: bold;
+        /* border: 2px solid white; */
+        transition: background-color 0.3s, border-color 0.3s;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+            background-color: #af8915;
+        }
+    }
+
+    .selected a {
+        background-color: #1d809f;
+        border-color: #1d809f;
+
+        &:hover {
+            background-color: #155d74;
+            border-color: #155d74;
+        }
+    }
+}

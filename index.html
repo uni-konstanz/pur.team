@@ -1,0 +1,144 @@
+---
+layout: default
+title: PUR
+subtitle: Pflegeunterstützende Robotik
+landing: true
+---
+
+<!-- About -->
+<section class="content-section bg-light" id="about">
+  <div class="container text-center">
+    <div class="content-section-heading">
+      <h3 class="text-secondary mb-0">Kurzzusammenfassung</h3>
+      <h2 class="mb-5">Wissenschafliche Evaluation von Pflegeunterstützender Robotik in der Altenpflege</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <p class="lead">In einem zweijährigen Projekt wollen wir von der
+        Universität Konstanz, der Fachhochschule Vorarlberg, dem Altenzentrum
+        Emmersberg und dem Pflegeheim St. Marienhaus (Caritas Konstanz)
+        herausfinden: Kann <a href="/contact.html#lio">Lio</a> der Assistenz-Roboter ein paar Routinearbeiten
+        erledigen, damit engagierte Pflegekräfte noch mehr Zeit für die Bewohnerinnen
+        und Bewohner haben?</p>
+
+        <p>Die Altenpflege gehört zu einer der wichtigsten Aufgaben unserer
+        Gesellschaft. Die liebevolle und kompetente Pflege von älteren
+        Mitbürgern ist sowohl erfüllend als auch fordernd für alle Pflegeberufe.
+        Nicht zu letzt die demografische und gesundheitliche Entwicklung stellt
+        einen kompletten Berufsstand vor neue Herausforderungen. In diesem
+        Projekt möchten wir daher herausfinden inwiefern man Pflegekräfte, durch
+        die Übernahme von repetitiven Aufgaben, entlasten kann, damit sie noch
+        mehr Zeit für die Bewohnerinnen und Bewohner haben.</p>
+
+        <p>Für diese Aufgabe gibt es bisher noch nicht den perfekten Roboter. In
+        diesem wissenschaftlich begleiteten Praxistest sollen zwei
+        Serviceroboter aber schrittweise Routinearbeiten zu übernehmen beginnen.
+        Dabei sollen Ziele, Hindernisse und Nutzen des Einsatzes von Robotern in
+        der Pflegeunterstützung aus den Blickwinkeln aller Beteiligter
+        betrachtet, evaluiert und prototypisch umgesetzt werden.</p>
+
+        <p>Erkenntnisse wollen die beteiligten Altersheime und Hochschulen
+          nicht nur für sich alleine behalten, sondern mit allen Interessierten
+          teilen. Mit dem Fachpersonal an Tagungen und mit der Bevölkerung im
+          <a href="/diary/">Robotertagebuch</a>. Denn nur gemeinsam können wir
+          die schwierigen Herausforderungen der Zukunft meistern.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="content-section bg-primary text-white text-center" id="services">
+  <div class="container">
+    <div class="content-section-heading">
+      <h3 class="text-secondary mb-0">Ziele</h3>
+      <h2 class="mb-5">Was wir untersuchen wollen</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="fa fa-grav" aria-hidden="true"></i>
+        </span>
+        <h4>
+          <strong>Entlastung</strong>
+        </h4>
+        <p class="text-faded mb-0">Kann ein Roboter die Pflegekräfte wirklich entlasten?</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+        </span>
+        <h4>
+          <strong>Akzeptanz</strong>
+        </h4>
+        <p class="text-faded mb-0">Wie gehen die Bewohner mit moderner Technik um?</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </span>
+        <h4>
+          <strong>Zufriedenheit</strong>
+        </h4>
+        <p class="text-faded mb-0">Wird die Zufriedenheit der Benutzer verbessert?</p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="fa fa-diamond" aria-hidden="true"></i>
+        </span>
+        <h4>
+          <strong>Qualität</strong>
+        </h4>
+        <p class="text-faded mb-0">Wie verändern sich Wohn- und Arbeitsqualität?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include last-entry.html %}
+
+<!-- Callout -->
+<section class="callout">
+  <div class="container text-center">
+    <h2 class="mx-auto mb-5">Hallo ich bin <em>Lio</em> und berichte regelmäßig von meinem Alltag in der Altenpflege.
+    </h2>
+    <a class="btn btn-primary btn-xl" href="/diary/">Zum Tagebuch</a>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section class="content-section" id="partner">
+  <div class="container">
+    <div class="content-section-heading text-center">
+      <h3 class="text-secondary mb-0">Projektpartner</h3>
+      <h2 class="mb-5">Wer ist an der Studie beteiligt?</h2>
+    </div>
+    <div class="row no-gutters">
+      {% for org_hash in site.data.organisations %}
+      {% assign org_key = org_hash[0] %}
+      {% assign organisation = site.data.organisations[org_key] %}
+      <div class="col-lg-6">
+        <a class="portfolio-item" href="{{organisation.url}}">
+          <span class="caption">
+            <span class="caption-content">
+              <h2>{{organisation.name}}</h2>
+              <p class="mb-0">{{organisation.description}}</p>
+            </span>
+          </span>
+          <img class="img-fluid" src="/assets/img/organisations/{{org_key}}.jpg" alt="Profilbild von {{organisation.name}}">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="content-section bg-primary text-white">
+  <div class="container text-center">
+    <h2 class="mb-4">Erfahren Sie mehr über dieses spannende Projekt...</h2>
+
+    <a href="/diary/" class="btn btn-xl btn-light mr-4">Tagebuch</a>
+    <a href="/about.html" class="btn btn-xl btn-dark">Beschreibung</a>
+  </div>
+</section>

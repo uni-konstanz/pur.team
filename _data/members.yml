@@ -1,0 +1,41 @@
+marcel_waldvogel:
+   name: Marcel Waldvogel
+   role: Projektleiter
+   email: marcel.waldvogel@uni-konstanz.de
+   organisation: uni_konstanz
+andreas_hoffmann:
+   name: Andreas Hoffmann
+   role: Geschäftsführer Caritas Konstanz
+   email: a.hoffmann@caritas-kn.de
+   organisation: caritas_konstanz
+baerbel_sackmann:
+   name: Bärbel Sackmann
+   role: Heimleitung St. Marienhaus
+   email: sackmann@caritas-kn.de
+   organisation: caritas_konstanz
+katrin_paldan:
+   name: Katrin Paldán
+   role: Wissenschaftliche Evaluation
+   email: katrin.paldan@fhv.at
+   organisation: fh_vorarlberg
+werner_gasser:
+   name: Werner Gasser
+   role: Leiter Alterszentrum Emmersberg
+   email: werner.gasser@stsh.ch
+   tel: +41 52 630 46 66
+   organisation: alterszentrum_emmersberg
+pascal_piguet:
+   name: Pascal Piguet
+   role: Pflegedienstleiter Alterszentrum Emmersberg
+   email: pascal.piguet@stsh.ch
+   tel: +41 52 630 46 64
+   organisation: alterszentrum_emmersberg
+klaus_herberth:
+   name: Klaus Herberth
+   role: Technischer Support
+   email: klaus.herberth@uni-konstanz.de
+   organisation: uni_konstanz
+lio:
+   name: Lio
+   role: Roboter
+   email: lio@pur.team

@@ -1,0 +1,5 @@
+node_modules/
+_site/
+.jekyll-metadata
+.sass-cache/
+yarn-error.log

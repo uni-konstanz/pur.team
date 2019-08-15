@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<!-- Look the author details up from the site config. -->
+{% assign author = site.data.members[page.author] %}
+
+<section class="content-section bg-light" id="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                {% if page.images.size > 0 %}
+                <div class="mb-5">
+                    <img class="img-fluid" src="/assets/img/{{page.images[0]}}" alt="Thumbnail von {{ post.title }}">
+                </div>
+                {% endif %}
+                {% if author %}
+                <p class="meta avatar">
+                    <!-- Personal Info. -->
+                    <img class="avatar" src="/assets/img/avatar/{{page.author}}.jpg"
+                        alt="Portrait von {{ author.name }}" />
+                    <a href="/contact.html#{{page.author}}">{{ author.name }}</a> veröffentlichte diesen Beitrag am
+                    <time datetime="{{page.date}}"> {{ page.date | date: '%B %d, %Y' }}</time>
+                </p>
+                {% else %}
+                <p class="meta">
+                    Veröffentlicht am <time datetime="{{page.date}}">{{ page.date | date: '%B %d, %Y' }}</time>
+                </p>
+                {% endif %}
+
+                <h2>{{ page.title }}</h2>
+
+                <div class="content">
+                    {{ content }}
+                </div>
+
+                <div class="navigation">
+                    <div class="previous">
+                        {% if page.previous %}
+                        <a href="{{page.previous.url}}" title="previous post">
+                            {{page.previous.title}}&nbsp;
+                            <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a>
+                        {% endif %}
+                    </div>
+                    <div class="next">
+                        {% if page.next %}
+                        <a href="{{page.next.url}}" title="next post">
+                            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+                            {{page.next.title}}</a>
+                        {% endif %}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

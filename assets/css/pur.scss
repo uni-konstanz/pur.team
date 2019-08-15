@@ -1,0 +1,125 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "global";
+@import "header-nav";
+@import "masthead";
+@import "sidebar";
+@import "services";
+@import "callout";
+@import "portfolio";
+@import "timeline";
+@import "footer";
+@import "bootstrap-overrides";
+
+.content-section.bg-muted--small {
+  padding: 2.5rem 0;
+  background-color: #e1e1e1;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+
+  img {
+    max-width: 100%;
+    filter: saturate(0);
+    opacity: 0.6;
+    transition: filter 0.5s, opacity 0.5s;
+
+    &:hover {
+      filter: saturate(1);
+      opacity: 1;
+    }
+  }
+}
+
+nav#header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  padding: 1.5rem;
+
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+nav#header-wrapper.scrolled {
+  background-color: #f9c31a;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.post-summary {
+  margin-bottom: 8rem;
+}
+
+.social-icon {
+  text-align: center;
+
+  li {
+    padding: 0;
+    margin: 0 2px;
+  }
+
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: $primary;
+    color: #fff;
+    line-height: 26px;
+    border-radius: 50%;
+
+    i {
+      font-size: 12px;
+    }
+
+    &:hover {
+      transform: scale(1.1, 1.1);
+      background-color: darken($primary, 10%);
+    }
+  }
+}
+
+#post {
+  .meta {
+    color: #818181;
+    margin-bottom: 4rem;
+  }
+
+  img.avatar {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+
+  .navigation {
+    margin-top: 5rem;
+
+    .previous {
+      float: left;
+      width: 49.5%;
+      text-align: right;
+      padding-right: 1rem
+    }
+
+    .next {
+      float: right;
+      width: 49.5%;
+      padding-left: 1rem;
+    }
+
+    .clear {
+      clear: both;
+    }
+  }
+}
