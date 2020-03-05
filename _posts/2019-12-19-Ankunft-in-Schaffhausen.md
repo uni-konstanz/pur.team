@@ -8,4 +8,4 @@ Nach langer Vorbereitung geht es nun endlich in den Praxisbetrieb. Hier in
 Schaffhausen ist es wirklich nett und ich freue mich auf die gute Zusammenarbeit
 mit dem Alterszentrum Emmersberg.
 
-Ich berichte sobald es weitere Neuigkeiten gibt. Bleibt gespannt.
+Ich melde mich wieder, sobald es weitere Neuigkeiten gibt. Bleibt gespannt.

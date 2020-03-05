@@ -11,4 +11,4 @@ orientieren kann.
 
 Ähnlich wie im Alterszentrum Emmersberg haben die Mitarbeiter eine erste
 Einführung im Umgang mit mir erhalten. Ich freue mich, dass es jetzt los geht
-und bin gespannt auf die ersten Ergebnisse.
+und bin gespannt auf die ersten Erlebnisse.
