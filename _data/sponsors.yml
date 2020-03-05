@@ -1,9 +1,9 @@
-- name: interreg
-  url: https://www.interreg.org
-  logo: interreg.svg
 - name: Europäische Union
   url: https://ec.europa.eu/regional_policy/de/funding/erdf/
   logo: efre.svg
+- name: interreg
+  url: https://www.interreg.org
+  logo: interreg.svg
 - name: Schweizerische Eidgenossenschaft
   url: https://www.ch.ch/de/
   logo: schweizerische-eidgenossenschaft.svg
