@@ -2,7 +2,11 @@ paginate: 5
 paginate_path: "/diary/page:num/"
 permalink: /diary/:year/:month/:day/:title.html
 
-title: PUR
+title: Pflegeunterstützende Robotik
+author: PUR project <lio@pur.team>
+keywords: Pflegeunterstützend, Service-Roboter, Unterstützung, Assistenzsystem
+
+url: https://pur.team
 
 plugins:
   - jekyll-feed
