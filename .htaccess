@@ -1,0 +1,8 @@
+<IfModule mod_headers.c>
+        Header set Strict-Transport-Security "max-age=15768000;"
+        Header set Content-Security-Policy "default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'"
+        Header set Referrer-Policy "strict-origin"
+        Header set X-Content-Type-Options "nosniff"
+        Header set X-Frame-Options "SAMEORIGIN"
+        Header set X-XSS-Protection "1; mode=block"
+</IfModule>
