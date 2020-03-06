@@ -1,21 +1,15 @@
 - name: Europäische Union
   url: https://ec.europa.eu/regional_policy/de/funding/erdf/
   logo: efre.svg
-- name: interreg
+- name: Interreg
   url: https://www.interreg.org
   logo: interreg.svg
 - name: Schweizerische Eidgenossenschaft
   url: https://www.ch.ch/de/
   logo: schweizerische-eidgenossenschaft.svg
-- name: Kanton Schaffhausen
-  url: https://standort.sh.ch/CMS/Webseite/Wirtschaftsf-rderung-Kanton-Schaffhausen-27603-DE.html
-  logo: schaffhausen.svg
-- name: AGE Stiftung
+- name: Age-Stiftung
   url: https://www.age-stiftung.ch
   logo: age-stiftung.svg
-- name: Messmer Stiftung
-  url: https://www.messmer-stiftung.de
-  logo: messmer-stiftung.svg
 - name: Caritas Stiftung
   url: https://www.dicvfreiburg.caritas.de/stiften
   logo: caritas.svg
