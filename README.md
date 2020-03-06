@@ -15,8 +15,8 @@ Make sure you have [bundler], [yarn] and [jekyll] installed on your system, befo
 install all dependencies with `bundler install` and `yarn install`.
 
 ### Basic usage
-To build the site, execute `jekyll build` or, if you like to use the build-in
-webserver, `jekyll serve`.
+To build the site, execute `bundle exec jekyll build` or, if you like to use
+the built-in webserver, `bundle exec jekyll serve`.
 
 ### Update dependencies
 Updating all dependencies is as easy as calling `yarn upgrade && yarn build`.

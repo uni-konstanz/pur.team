@@ -1,4 +1,5 @@
 ---
+title: Ich bin berühmt!
 author: lio
 images:
     - diary/2020_03_01_Flasche.jpg
