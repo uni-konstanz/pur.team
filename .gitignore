@@ -1,5 +1,9 @@
 node_modules/
 _site/
+.jekyll-cache
 .jekyll-metadata
 .sass-cache/
 yarn-error.log
+Gemfile.lock
+yarn.lock
+package-lock.json

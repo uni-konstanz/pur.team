@@ -11,9 +11,8 @@ of Konstanz](mailto:klaus.herberth@uni-konstanz.de).
 
 ## Usage
 ### Requirements
-Make sure you have [yarn] and [jekyll] installed on your system, before you
-install all dependencies with `yarn install` and `gem install
-octopress-autoprefixer`.
+Make sure you have [bundler], [yarn] and [jekyll] installed on your system, before you
+install all dependencies with `bundler install` and `yarn install`.
 
 ### Basic usage
 To build the site, execute `jekyll build` or, if you like to use the build-in
@@ -24,5 +23,6 @@ Updating all dependencies is as easy as calling `yarn upgrade && yarn build`.
 Please beware that all dependencies should be commited to the repository,
 because Github pages is not able to get them from npm.
 
+[bundler]: https://bundler.io
 [yarn]: https://yarnpkg.com
 [jekyll]: https://jekyllrb.com
