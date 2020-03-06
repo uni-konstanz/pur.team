@@ -7,6 +7,9 @@
 - name: Schweizerische Eidgenossenschaft
   url: https://www.ch.ch/de/
   logo: schweizerische-eidgenossenschaft.svg
+- name: Messmer Stiftung
+  url: https://www.messmer-stiftung.de
+  logo: messmer-stiftung.svg
 - name: Age-Stiftung
   url: https://www.age-stiftung.ch
   logo: age-stiftung.svg
