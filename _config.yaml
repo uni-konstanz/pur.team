@@ -22,6 +22,7 @@ exclude:
   - README.md
   - yarn-error.log
   - yarn.lock
+  - Gemfile*
 
 defaults:
   -
