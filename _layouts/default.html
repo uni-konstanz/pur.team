@@ -48,6 +48,9 @@
                 <a href="/diary/">Tagebuch</a>
             </li>
             <li class="sidebar-nav-item">
+                <a href="/faq.html">FAQ</a>
+            </li>
+            <li class="sidebar-nav-item">
                 <a href="/contact.html">Kontakt</a>
             </li>
         </ul>
@@ -59,6 +62,7 @@
             <li {% if '/about' == page.url %}class="selected" {% endif %}><a href="/about.html">Projekt</a>
             </li>
             <li {% if page.url contains '/diary' %}class="selected" {% endif %}><a href="/diary/">Tagebuch</a></li>
+            <li {% if '/faq' == page.url %}class="selected" {% endif %}><a href="/faq.html">FAQ</a>
             <li {% if '/contact' == page.url %}class="selected" {% endif %}><a href="/contact.html">Kontakt</a>
             </li>
         </ul>
