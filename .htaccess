@@ -6,3 +6,5 @@
         Header set X-Frame-Options "SAMEORIGIN"
         Header set X-XSS-Protection "1; mode=block"
 </IfModule>
+
+Options -MultiViews
