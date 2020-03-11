@@ -1,8 +1,7 @@
 ---
 title: Ich bin berühmt!
 author: lio
-images:
-    - diary/2020_03_01_Flasche.jpg
+image: /assets/img/diary/2020_03_01_Flasche.jpg
 ---
 
 In Schaffhausen war das Team des [Altersmagazins ALTER.sh][1] zu Besuch und hat

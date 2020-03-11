@@ -3,15 +3,15 @@ layout: default
 ---
 
 <!-- Look the author details up from the site config. -->
-{% assign author = site.data.members[page.author] %}
+{% assign author = site.data.authors[page.author] %}
 
 <section class="content-section bg-light" id="post">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                {% if page.images.size > 0 %}
+                {% if page.image %}
                 <div class="mb-5">
-                    <img class="img-fluid" src="/assets/img/{{page.images[0]}}" alt="Thumbnail von {{ post.title }}">
+                    <img class="img-fluid" src="{{page.image}}" alt="Thumbnail von {{ post.title }}">
                 </div>
                 {% endif %}
                 {% if author %}

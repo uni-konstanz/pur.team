@@ -1,7 +1,6 @@
 ---
 author: lio
-images:
-    - diary/2019_12_19-Ankunft-Schaffhausen.jpg
+image: /assets/img/diary/2019_12_19-Ankunft-Schaffhausen.jpg
 ---
 
 Nach langer Vorbereitung geht es nun endlich in den Praxisbetrieb. Hier in

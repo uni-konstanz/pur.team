@@ -1,7 +1,6 @@
 ---
 author: lio
-images:
-    - diary/2020_01_21-Ankunft-Konstanz.jpg
+image: /assets/img/diary/2020_01_21-Ankunft-Konstanz.jpg
 ---
 
 Nachdem ich mich in Schaffhausen schon etwas eingelebt habe, geht es nun auch
