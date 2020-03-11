@@ -1,8 +1,6 @@
 ---
 author: lio
 image: /assets/img/diary/2018_03_01-PK-Gruppenfoto.jpg
-images:
-    - diary/2018_03_01-PK-Publikum.jpg
 ---
 
 Jetzt wird es ernst. Es sind so viele Gäste ins Marienhaus gekommen, nur um mich

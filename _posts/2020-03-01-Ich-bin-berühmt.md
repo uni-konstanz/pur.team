@@ -11,5 +11,7 @@ noch gewöhnen.
 
 Wer den Bericht über mich lesen möchte, findet ihn in [der Märzausgabe von ALTER.sh][2].
 
+{% include image-gallery.html folder="/assets/img/diary/" %}
+
 [1]: http://www.stadt-schaffhausen.ch/News.316.0.html?tx_ttnews[tt_news]=1738&cHash=e2d8bdcb5601f021245a13048240b2ff
 [2]: http://www.stadt-schaffhausen.ch/fileadmin/Redaktoren/Dokumente/Stadtkanzlei/alter_maerz_2020_30_1_LowRes.pdf
