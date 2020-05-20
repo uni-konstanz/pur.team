@@ -150,3 +150,30 @@ subtitle: Fragen und Antworten
         </div>
     </div>
 </section>
+
+<section class="content-section bg-gray">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h2 class="mb-5">Wurde über Lio schon in der Presse berichtet?</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p>Unser Projekt freut sich großer Beliebtheit und daher wird
+                    regelmäßig über Lio und unsere Studien berichtet. Folgend finden
+                    Sie eine Auswahl von Veröffentlichungen.</p>
+
+                <ul>
+                    {% for publication in site.data.publications %}
+                    {%if publication.url %}
+                    <li><a href="{{publication.url}}">{{publication.title}}</a>, {{publication.publisher}},
+                        <em>{{publication.date}}</em></li>
+                    {% else %}
+                    <li>{{publication.title}}, {{publication.publisher}},
+                        <em>{{publication.date}}</em></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
