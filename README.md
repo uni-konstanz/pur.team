@@ -17,6 +17,12 @@ The easiest way to build this site is by using [Docker]:
 docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:3.8 jekyll build
 ```
 
+In development you can also serve an instance with:
+
+```
+docker run --rm -p 127.0.0.1:4000:4000/tcp --volume="$PWD:/srv/jekyll" -it jekyll/jekyll:3.8 jekyll serve --incremental
+```
+
 ### Requirements
 Make sure you have [bundler], [yarn] and [jekyll] installed on your system, before you
 install all dependencies with `bundler install` and `yarn install`.
