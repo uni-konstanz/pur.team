@@ -130,56 +130,21 @@ subtitle: Fragen und Antworten
                 </p>
 
                 <div class="row">
+                    {% for press_hash in site.data.press %}
+                    {% assign press_key = press_hash[0] %}
+                    {% assign press = site.data.press[press_key] %}
                     <div class="col-sm-4 mb-3">
-                        <a href="assets/img/press/Lio_1_Anja_Mueller.jpg">
-                            <img src="assets/img/press/Lio_1_Anja_Mueller.thumbnail.jpg" class="card-img-top" alt="Lio 1">
+                        <a href="assets/img/press/{{press_key}}.jpg">
+                            <img src="assets/img/press/{{press_key}}.thumbnail.jpg" class="card-img-top"
+                                alt="{{press.title}}">
                         </a>
                         <div class="card">
                             <div class="card-body">
-                                <p class="card-text">&copy; Anja Müller - Emanya Photography</p>
+                                <p class="card-text">&copy; {{press.copyright}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 mb-3">
-                        <a href="assets/img/press/Lio_2_Anja_Mueller.jpg">
-                            <img src="assets/img/press/Lio_2_Anja_Mueller.thumbnail.jpg" class="card-img-top" alt="Lio 2">
-                        </a>
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">&copy; Anja Müller - Emanya Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mb-3">
-                        <a href="assets/img/press/Lio_3_Anja_Mueller.jpg">
-                            <img src="assets/img/press/Lio_3_Anja_Mueller.thumbnail.jpg" class="card-img-top" alt="Lio 3">
-                        </a>
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">&copy; Anja Müller - Emanya Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mb-3">
-                        <a href="assets/img/press/Lio_4_Anja_Mueller.jpg">
-                            <img src="assets/img/press/Lio_4_Anja_Mueller.thumbnail.jpg" class="card-img-top" alt="Lio 4">
-                        </a>
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">&copy; Anja Müller - Emanya Photography</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mb-3">
-                        <a href="assets/img/press/Lio_5_Anja_Mueller.jpg">
-                            <img src="assets/img/press/Lio_5_Anja_Mueller.thumbnail.jpg" class="card-img-top" alt="Lio 5">
-                        </a>
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="card-text">&copy; Anja Müller - Emanya Photography</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
